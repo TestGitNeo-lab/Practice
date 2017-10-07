@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First JS</title>
+	<script src="myScript.js"></script>
+</head>
+<body>
+	<h2>What can Javascript do?</h2>
+	<h4 id="zoomtext">Javascript can change attribute HTML</h4>
+
+
+	<button type="button" onclick="document.getElementById('myImage').src='images/turnon.gif'">Turn on the light</button>
+
+	<img id="myImage" src="images/turnon.gif" style="width:100px">
+
+	<button type="button" onclick="document.getElementById('myImage').src='images/turnoff.gif'">Turn off the light</button>
+
+
+	<button type="button" onclick="document.getElementById('zoomtext').style.fontSize ='35px'">Zoom Text</button>
+
+	<button type="button" onclick="document.getElementById('zoomtext').style.fontSize ='20px'">unZoom Text</button>
+
+
+	<button type="button" onclick="document.getElementById('zoomtext').style.display='none'">Hidden</button>
+
+	<button type="button" onclick="document.getElementById('zoomtext').style.display='block'">Show</button>
+
+	<button type="button" onclick="myFunction()">This replace</button>
+
+	<p id="sum">Sum 5 + 6</p>
+	<script>
+		document.getElementById("sum").innerHTML = (5+6)*10;
+	</script>
+
+	<script>
+		document.write((5+4)*10);
+	</script>
+
+	<p id="con_str"></p>
+	<script>
+		x = 5;
+		y = 6;
+		z = x + y;
+		document.getElementById("con_str").innerHTML = "5 + 6 = " + z;
+	</script>
+
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script>
+		function Hello()
+		{
+			document.getElementById("demo1").innerHTML = "Hello ";
+			document.getElementById("demo2").innerHTML = " new programming JS";
+		}
+	</script>
+	<button onclick="Hello()">Click me</button>
+
+
+
+
+
+</body>
+</html>
